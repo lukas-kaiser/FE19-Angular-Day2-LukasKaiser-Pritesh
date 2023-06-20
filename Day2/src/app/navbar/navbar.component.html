@@ -12,10 +12,13 @@
         <a class="nav-link" href="#">Features</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="">{{counter}}€</a>
+        <button type="button" class="btn btn-warning">{{counter}}€</button>
       </li>
       <li class="nav-item">
         <button type="button" class="btn btn-success" (click)="countClick()">Donate 10€</button>
+      </li>
+      <li class="nav-item">
+        <button type="button" class="btn btn-danger" *ngIf="counter >= 200">VIP</button>
       </li>
     </ul>
   </div>
